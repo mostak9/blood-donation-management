@@ -1,5 +1,8 @@
-import { Button, Container, Grid, TextField } from "@mui/material";
+import { Button, Container, Grid, TextField, Typography } from "@mui/material";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
+import AddLocationIcon from "@mui/icons-material/AddLocation";
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 // const formContainerStyle = {
 //     marginTop: '20px',
 //   };
@@ -18,19 +21,48 @@ const ContactUs = () => {
     // Logic to handle form submission goes here
   };
   return (
-    <div style={{ padding: '80px 0', backgroundColor: 'rgb(229, 228, 226, 0.4)'}}>
+    <div
+      style={{ padding: "80px 0", backgroundColor: "rgb(229, 228, 226, 0.4)" }}
+    >
       <Container>
         <SectionTitle
           title="Contact Us"
           subtitle="Contact with us as you needed"
         />
-        <Grid>
+        <Grid container spacing={4} mt={5}>
+          {/* Contact details section */}
+        <Grid item sm={12} md={6}>
+          <Typography variant="h5" fontWeight={700}>
+            Get in touch with us — we are here to help you save lives
+          </Typography>
+          <Grid sx={{display:'flex', flexDirection: 'column', gap: '0.8rem', mt: '20px'}}>
+          <Typography variant="body1" sx={{ display: "flex", gap: "2px" }}>
+            {" "}
+            <AddLocationIcon color="primary" />{" "}
+            <Typography fontWeight={700}>Address: </Typography>123 Lifesaver
+            Avenue, Bloodville, State, ZIP
+          </Typography>
+          <Typography variant="body1" sx={{ display: "flex", gap: "2px" }}>
+            {" "}
+            <PhoneIcon color="primary" />{" "}
+            <Typography fontWeight={700}>Phone: </Typography>(+880) 1734533333
+          </Typography>
+          <Typography variant="body1" sx={{ display: "flex", gap: "2px" }}>
+            {" "}
+            <EmailIcon color="primary" />{" "}
+            <Typography fontWeight={700}>Email: </Typography>support@lifeflow.com
+          </Typography>
+          </Grid>
+        </Grid>
+        {/* form section */}
+        <Grid item sm={12} md={6}>
           <form onSubmit={handleSubmit}>
-            <Grid maxWidth={"80%"} mx={"auto"} container spacing={2} mt={5}>
+            <Grid maxWidth={"80%"} mx={"auto"} container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
                   label="First Name"
                   variant="outlined"
+                  size="small"
                   fullWidth
                   style={textFieldStyle}
                 />
@@ -39,6 +71,7 @@ const ContactUs = () => {
                 <TextField
                   label="Last Name"
                   variant="outlined"
+                  size="small"
                   fullWidth
                   style={textFieldStyle}
                 />
@@ -47,6 +80,7 @@ const ContactUs = () => {
                 <TextField
                   label="Email"
                   variant="outlined"
+                  size="small"
                   fullWidth
                   style={textFieldStyle}
                 />
@@ -55,6 +89,7 @@ const ContactUs = () => {
                 <TextField
                   label="Message"
                   variant="outlined"
+                  size="small"
                   multiline
                   rows={4}
                   fullWidth
@@ -74,6 +109,7 @@ const ContactUs = () => {
               </Grid>
             </Grid>
           </form>
+        </Grid>
         </Grid>
       </Container>
     </div>
