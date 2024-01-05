@@ -15,7 +15,8 @@ import pic4 from "../../../assets/cards/g4.webp";
 
 const DonationProcess = () => {
   return (
-    <div>
+    <div data-aos="fade-up"
+    data-aos-duration="1200">
       <Container>
         <Grid py={7}>
           <SectionTitle
@@ -29,7 +30,7 @@ const DonationProcess = () => {
             <Grid item lg={3} md={6} xs={12}>
               <Card
                 data-aos="fade-up"
-                data-aos-duration="600"
+                data-aos-duration="1400"
                 sx={{ maxWidth: 345, minHeight: 350 }}
                 elevation={5}
               >
@@ -56,7 +57,7 @@ const DonationProcess = () => {
             <Grid item lg={3} md={6} xs={12}>
               <Card
                 data-aos="fade-up"
-                data-aos-duration="900"
+                data-aos-duration="1900"
                 sx={{ maxWidth: 345, minHeight: 350 }}
                 elevation={5}
               >
@@ -83,7 +84,7 @@ const DonationProcess = () => {
             <Grid item lg={3} md={6} xs={12}>
               <Card
                 data-aos="fade-up"
-                data-aos-duration="1200"
+                data-aos-duration="2300"
                 sx={{ maxWidth: 345, minHeight: 350 }}
                 elevation={5}
               >
@@ -110,7 +111,7 @@ const DonationProcess = () => {
             <Grid item lg={3} md={6} xs={12}>
               <Card
                 data-aos="fade-up"
-                data-aos-duration="1500"
+                data-aos-duration="2800"
                 sx={{ maxWidth: 345, minHeight: 350 }}
                 elevation={5}
               >

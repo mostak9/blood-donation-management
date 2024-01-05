@@ -11,7 +11,8 @@ const Banner = () => {
         maxWidth="lg"
         sx={{ display: "flex", alignItems: "center", height: "700px" }}
       >
-        <div className="banner-text">
+        <div className="banner-text" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
