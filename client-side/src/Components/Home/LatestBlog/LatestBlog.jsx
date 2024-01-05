@@ -57,7 +57,8 @@ const LatestBlog = () => {
             {/* Large device: Show 4 columns */}
             {latestBlog?.map((blog) => (
               <Grid key={blog._id} item  xs={12} sm={6} md={4} lg={4}>
-                <Card sx={{ maxWidth: 345 }} elevation={5}>
+                <Card data-aos="fade-up"
+                data-aos-duration="1000" sx={{ maxWidth: 345 }} elevation={5}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
