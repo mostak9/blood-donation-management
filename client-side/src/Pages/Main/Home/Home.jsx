@@ -7,21 +7,19 @@ import LatestBlog from "../../../Components/Home/LatestBlog/LatestBlog";
 import OurTeam from "../../../Components/Home/OurTeam/OurTeam";
 import SiteStat from "../../../Components/Home/SiteStat/SiteStat";
 
-
-
 const Home = () => {
-    return (
-        <div>
-           <Banner/>
-           <DonationProcess/>
-           <SiteStat/>
-           <OurTeam/>
-           <LatestBlog/>
-           <FaqSection/>
-            <ContactUs/>
-            <AboutUs/>
-        </div>
-    );
+  return (
+    <div>
+      <Banner />
+      <DonationProcess />
+      <SiteStat />
+      <OurTeam />
+      <LatestBlog />
+      <FaqSection />
+      <ContactUs />
+      <AboutUs />
+    </div>
+  );
 };
 
 export default Home;

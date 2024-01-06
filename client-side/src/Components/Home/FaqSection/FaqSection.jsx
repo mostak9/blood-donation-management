@@ -26,7 +26,7 @@ const FAQItems = [
       "If you are experiencing symptoms of a cold, flu, or any illness, it is recommended to postpone your donation until you are feeling better. Donating while sick may not be safe for you and could potentially affect the recipient.",
   },
   {
-    question: "IHow often can I donate blood?",
+    question: "How often can I donate blood?",
     answer:
       "Typically, whole blood donors can donate every 56 days for men and every 84 days for women. However, this might vary based on donation type, donor health, and local regulations. It is advisable to confirm with the blood donation center about their specific guidelines.",
   },
@@ -44,23 +44,31 @@ const FaqSection = () => {
   };
 
   return (
-    <div>
-      <Container sx={{py: 8}}>
+    <div data-aos="fade-up"
+    data-aos-duration="1500">
+      <Container sx={{ py: 8 }}>
         <SectionTitle
           title="FAQs for Donors"
           subtitle="Find Answers to Common Questions About Blood Donation"
         />
-        <Grid mt={5} sx={{display: 'flex', flexDirection: 'column', gap: 2}}>
+        <Grid
+          mt={5}
+          sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           {FAQItems.map((item, index) => (
             <Accordion
+              
               key={index}
               expanded={expanded === `panel${index}`}
               onChange={handleAccordionChange(`panel${index}`)}
               elevation={2}
-              
-              sx={{borderRadius: '16px 0 16px 0', py: 1}}
+              sx={{ borderRadius: "16px 0 16px 0", py: 1 }}
             >
-              <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" fontSize="large" />}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon color="primary" fontSize="large" />}
+              >
                 <Typography variant="h6">{item.question}</Typography>
               </AccordionSummary>
               <Collapse
@@ -69,7 +77,7 @@ const FaqSection = () => {
                 unmountOnExit
               >
                 <AccordionDetails>
-                  <Typography color='gray'>{item.answer}</Typography>
+                  <Typography color="gray">{item.answer}</Typography>
                 </AccordionDetails>
               </Collapse>
             </Accordion>
