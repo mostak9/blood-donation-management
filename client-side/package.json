@@ -36,7 +36,8 @@
     "react-type-animation": "^3.2.0",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.8.4",
