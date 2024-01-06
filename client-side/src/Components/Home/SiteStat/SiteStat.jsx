@@ -21,6 +21,8 @@ const SiteStat = () => {
         <Grid container mt={5}>
           <Grid
             item
+            data-aos="fade-up"
+     data-aos-duration="500"
             p={3}
             borderRight={{ xs: "none", md: "2px solid white" }}
             xs={12}
@@ -43,6 +45,8 @@ const SiteStat = () => {
           <Grid
             item
             p={3}
+            data-aos="fade-up"
+     data-aos-duration="1000"
             borderRight={{ xs: "none", md: "2px solid white" }}
             xs={12}
             md={6}
@@ -64,6 +68,8 @@ const SiteStat = () => {
           <Grid
             item
             p={3}
+            data-aos="fade-up"
+     data-aos-duration="1500"
             borderRight={{ xs: "none", md: "2px solid white" }}
             xs={12}
             md={6}
@@ -84,6 +90,8 @@ const SiteStat = () => {
           </Grid>
           <Grid
             item
+            data-aos="fade-up"
+     data-aos-duration="2000"
             p={3}
             xs={12}
             md={6}
