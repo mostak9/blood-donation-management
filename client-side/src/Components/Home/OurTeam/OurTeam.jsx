@@ -27,6 +27,16 @@ const OurTeam = () => {
   return (
     <div>
       <Container sx={{ py: 8 }}>
+        <Grid sx={{ textAlign: "center", maxWidth: 700, mx: 'auto' }}>
+          <Typography variant="h4" mb={2} fontWeight={700} color='rgba(220, 20, 60, 1)'>
+            Pioneers of Compassion
+          </Typography>
+          <Typography variant="body" color="gray" >
+            Meet the Visionaries, Medical Experts, and Advocates Whose
+            Unwavering Dedication and Forward-Thinking Approach Are Redefining
+            Lifesaving Practices
+          </Typography>
+        </Grid>
         <Grid>
           <Swiper
             spaceBetween={30}
